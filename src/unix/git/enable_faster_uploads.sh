@@ -17,3 +17,6 @@ echo "*.zip -delta" >> info/attributes
 git repack -a -d -F --window-memory 100m --max-pack-size 100m
 
 git gc
+
+# export the repository through git daemon
+touch git-daemon-export-ok
