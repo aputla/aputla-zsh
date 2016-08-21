@@ -1,7 +1,8 @@
 # Run the following commands on the bare repository (on the server)
 
-git config pack.windowMemory 100m
-git config pack.packSizeLimit 100m
+git config --add pack.windowMemory 100m
+git config --add pack.packSizeLimit 100m
+git config --add core.bigFileThreshold 1
 
 echo "*.pdf -delta" > info/attributes
 echo "*.jpg -delta" > info/attributes
